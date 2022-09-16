@@ -1,4 +1,4 @@
-package com.posada.santiago.gamapostsandcomments.application.bus.models;
+package com.posada.santiago.gamapostsandcomments.application.config.bus.models;
 
 import com.google.gson.Gson;
 

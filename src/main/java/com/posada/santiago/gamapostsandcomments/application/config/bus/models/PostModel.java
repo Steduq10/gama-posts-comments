@@ -1,12 +1,12 @@
-package com.posada.santiago.gamapostsandcomments.application.bus.models;
+package com.posada.santiago.gamapostsandcomments.application.config.bus.models;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class PostModel {
 
+  //  private String id;
     private String id;
-    private String aggregateId;
     private String author;
     private String title;
     private List<CommentModel> comments;
@@ -15,8 +15,8 @@ public class PostModel {
         this.comments = new ArrayList<>();
     }
 
-    public PostModel(String aggregateId, String author, String title, List<CommentModel> comments) {
-        this.aggregateId = aggregateId;
+    public PostModel(String id, String author, String title, List<CommentModel> comments) {
+        this.id = id;
         this.author = author;
         this.title = title;
         this.comments = comments;
@@ -30,13 +30,13 @@ public class PostModel {
         this.id = id;
     }
 
-    public String getAggregateId() {
-        return aggregateId;
+   /* public String getId() {
+        return id;
     }
 
-    public void setAggregateId(String aggregateId) {
-        this.aggregateId = aggregateId;
-    }
+    public void setId(String id) {
+        this.id = id;
+    }*/
 
     public String getAuthor() {
         return author;
